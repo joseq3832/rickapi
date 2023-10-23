@@ -1,45 +1,43 @@
 {
-  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true,
-      "nursery": {
-        "useHookAtTopLevel": "error"
-      },
-      "style": {
-        "noUnusedTemplateLiteral": "warn",
-        "noVar": "error"
-      },
-      "correctness": {
-        "noUnusedVariables": "error",
-        "noVoidTypeReturn": "warn"
-      },
-      "suspicious": {
-        "noConsoleLog": "warn",
-        "noDuplicateJsxProps": "error"
-      },
-      "a11y": {
-        "noSvgWithoutTitle": "off"
-      }
-    }
-  },
-  "formatter": {
-    "enabled": true,
-    "indentStyle": "space",
-    "indentSize": 2,
-    "lineWidth": 80
-  },
-  "javascript": {
-    "formatter": {
-      "semicolons": "asNeeded",
-      "quoteStyle": "single"
-    }
-  },
-  "files": {
-    "ignore": ["node_modules/*", "dist/*", "storybook-static/*"]
-  }
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"style": {
+				"noUnusedTemplateLiteral": "warn",
+				"noVar": "error"
+			},
+			"correctness": {
+				"noUnusedVariables": "error",
+				"noVoidTypeReturn": "warn",
+				"useHookAtTopLevel": "error"
+			},
+			"suspicious": {
+				"noConsoleLog": "warn",
+				"noDuplicateJsxProps": "error"
+			},
+			"a11y": {
+				"noSvgWithoutTitle": "off"
+			}
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "space",
+		"indentWidth": 2,
+		"lineWidth": 80
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"quoteStyle": "single"
+		}
+	},
+	"files": {
+		"ignore": ["node_modules/*", "dist/*", "storybook-static/*"]
+	}
 }
